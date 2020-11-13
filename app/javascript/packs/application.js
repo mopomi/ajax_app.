@@ -3,10 +3,14 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
+// JavaScriptファイルを読み込むための記述
+// require("<該当ファイルをパスで指定>")のように記述することで、ファイルを読み込むことができます。
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+require("../checked")
+require("../memo")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
